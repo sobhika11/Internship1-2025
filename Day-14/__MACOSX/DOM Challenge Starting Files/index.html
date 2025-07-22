@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>My Website</title>
+    <link rel="stylesheet" href="styles.css">
+
+  </head>
+  <body>
+
+    <h1>Hello</h1>
+
+    <input type="checkbox">
+
+    <button style="color:red;">Click Me</button>
+
+    <ul>
+      <li class="list">
+        <a href="https://www.google.com">Google</a>
+      </li>
+      <li class="list">Second</li>
+      <li class="list" id="t">Third</li>
+    </ul>
+    <script>
+      //1st way
+      //document.getElementById("t").innerHTML = "Changed";
+      //2st way
+      document.body.children[3].lastElementChild.textContent = "Changed";
+    </script>
+  </body>
+
+</html>

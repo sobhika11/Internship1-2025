@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Play Local Audio</title>
+</head>
+
+<body>
+
+    <!-- 1. Counter App
+    Create a counter with three buttons: Increment, Decrement, and Reset.
+    Use DOM methods like getElementById, innerText, and addEventListener. -->
+
+    <button id="inc">+</button>
+    <button id="dec">-</button>
+    <button id="reset">Reset</button>
+    <p id="count">0</p>
+    <script>
+        var count = 0;
+        document.getElementById("inc").addEventListener("click", () => {
+            count++;
+            document.getElementById("count").innerText = count;
+        });
+
+        // code for dec and reset
+            document.getElementById("dec").addEventListener("click",() => {
+                if(count>0){
+                    count--;
+                    document.getElementById("count").innerText=count;
+                }
+            });
+        document.getElementById("reset").addEventListener("click",() => {
+            count=0;
+            document.getElementById("count").innerText=count;
+        })
+    </script>
+
+</body>
+
+</html>
